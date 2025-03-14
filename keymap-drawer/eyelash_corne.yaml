@@ -54,20 +54,20 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:pan-up$$
   - PG UP
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '-', s: _}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - BT CLR ALL
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:pan-down$$
   - HOME
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - END
@@ -80,9 +80,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB TOG
   - RGB HUI
-  - RGB BRI
-  - RGB BRD
   - RGB EFF
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - PG DN
   - {t: '$$mdi:transfer$$', type: trans}
@@ -110,7 +110,7 @@ layers:
   - '*'
   - (
   - )
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
   - F3
@@ -121,11 +121,11 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - _
-  - +
   - '{'
   - '}'
+  - +
   - '|'
-  - '~'
+  - {t: '$$mdi:transfer$$', type: trans}
   - F7
   - F8
   - F9
@@ -135,9 +135,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '-', s: _}
-  - {t: '=', s: +}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
+  - {t: '=', s: +}
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
