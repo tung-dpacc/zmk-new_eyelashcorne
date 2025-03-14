@@ -33,25 +33,25 @@
             bindings = <&kp>, <&kp>;
         };
 
-    td0: td0 {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "Shift/Caps Lock Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+        td0: td0 {
+                compatible = "zmk,behavior-tap-dance";
+                display-name = "Shift/Caps Lock Tap Dance";
+                #binding-cells = <0>;
+                bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
-    };
 
-    rgb_encoder: rgb_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
-    };
+        rgb_encoder: rgb_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+        };
 
-    scroll_encoder: scroll_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-        tap-ms = <30>;
+        scroll_encoder: scroll_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <30>;
+        };
     };
 
     keymap {
@@ -76,7 +76,7 @@
 &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI &rgb_ug RGB_BRD &rgb_ug RGB_EFF  &trans   &kp PG_DN            &trans    &kp N1  &kp N2  &kp N3  &kp FSLH   &trans
                                          &trans        &trans        &trans                                                     &trans    &kp N0  &trans
             >;
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&rgb_encoder>;
         };
 
         raise_layer {
