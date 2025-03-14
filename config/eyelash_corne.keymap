@@ -18,8 +18,8 @@
 };
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
-
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 120    // 10
+#define ZMK_MOUSE_SCRL_VAL 140
 
 &msc {
     acceleration-exponent = <1>;      // 0
@@ -61,7 +61,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-            tap-ms = <100>;
+            tap-ms = <20>;
         };
     };
 
@@ -76,7 +76,7 @@
 &td0     &kp Z  &kp X  &kp C  &kp V  &kp B    &kp C_MUTE          &kp DOWN              &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &ht_tp RSHIFT RET
                               &kp LALT  &lt 1 DEL  &kp SPACE                     &kp RCMD  &lt 2 RET  &kp RCTRL
             >;
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         lower_layer {
