@@ -76,7 +76,7 @@
 &td0     &kp Z  &kp X  &kp C  &kp V  &kp B    &kp C_MUTE          &kp DOWN              &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &ht_tp RSHIFT RET
                               &kp LALT  &lt 1 DEL  &kp SPACE                     &kp RCMD  &lt 2 RET  &kp RCTRL
             >;
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         lower_layer {
