@@ -19,7 +19,7 @@
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
-{
+/ {
     behaviors {         
        ht_tp: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
